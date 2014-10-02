@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Cheklist registro de Embarque</title>
+	<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<p>Menu</p>
+		<p>OPS | Exportacion</p>
+	</div>
+	<div id="cheklist">
+		<form method="post" id="registerChecklist">
+				<label for="awb"> AWB </label>
+				<input type="text" id="awb" placeholder="145-12345678"> 
+				<label for="awbori"> ORIGEN </label>
+				<input type="text" id="awbori"> 
+				<label for="awbdes"> DESTINO </label>
+				<input type="text" id="awbdes"> 
+				<label for="cantSkid"> CANT KIDS </label>
+				<input type="number" min="1" step="1" id="cantSkid"> 
+				<label for="almacen"> ALMACEN </label>
+				<input type="text" id="almacen"> 
+				<label for="cnee"> CNEE </label>
+				<input type="text" id="cnee"> 
+				<label for="sh"> SHIPPER </label>
+				<input type="text" id="sh"> 
+				<label for="ag"> AGENCIA </label> 
+				<input type="text" id="ag">
+
+				<label for="horaApertura"> HORA DE APERTURA DE CAMION </label>
+				<input type="time" id="horaApertura">
+				<label for="horaCierre"> HORA DE CIERRE DE CAMION </label>
+				<input type="time" id="horaCierre">
+				<label for="temperTherm"> SERIE DEL TERMOMETRO - COCAL </label>
+				<input type="text" id="tempTherm">
+		 		<label for="temperTherm"> TEMPERATURA DEL THERMOKING </label>
+				<input type="text" id="tempTherm">
+				<label for="temperCamara"> TEMPERATURA DE CAMARA </label>
+				<input type="text" id="tempCamara">
+			
+				<p>SOBRE LA PARIHUELA</p>
+				<label for="tipoPHL"> TIPO </label>
+				<input name="tipo_phl" id="tipoPHL" list="tipoPHL">
+				<datalist id="tipoPHL">
+					<option value="MARITIMA"></option>
+					<option value="AEREA"></option>
+				</datalist>
+				<label for="matPHL"> MATERIAL </label>
+				<input name="material_phl" id="matPHL" list="materialPHL">
+				<datalist id="materialPHL">
+					<option value="MADERA"></option>
+					<option value="PLASTICO"></option>
+				</datalist>
+				<label for="senasa">Tiene Sello SENASA</label>
+				<input type="checkbox" id="senasa">
+				<label for="bisel">Tiene Bisel</label>
+				<input type="checkbox" id="bisel">
+				<input type="text" id="comment" placeholder="Indique si hay algun problema con las parihuelas">
+			
+				<p>SOBRE LOS ZUNCHOS</p>
+				<label for="cantZnV">Zunchos en vertical <input type="number" id="cantZnV" min="1" step="1"></label>
+				<label for="cantZnH">Zunchos en horizontal <input type="number" id="cantZnH" min="1" step="1"></label>
+				<label for="matZN"> MATERIAL </label>
+				<input name="material_ZN" id="matZN" list="materialZN">
+				<datalist id="materialZN">
+					<option value="METAL"></option>
+					<option value="PLASTICO"></option>
+				</datalist>
+				<label for="cantPlatinas">Cantidad de platinas <input type="number" id="cantPlatinas" min="1" step="1"></label>
+				<input type="text" id="comment" class="comentarios" placeholder="Indique si hay algun problema con los zunchos">
+			
+				<p>SOBRE LA CARGA</p>
+				<label for="commName"> PRODUCTO </label>
+				<input name="commName" id="commName" list="commName">
+				<datalist id="commName">
+					<option value="ESPARRAGOS"></option>
+				</datalist>
+				<label for="commClase"> CLASE </label>
+				<input name="commClase" id="commClase" list="commClase">
+				<datalist id="commClase">
+					<option value="BLANCOS"></option>
+					<option value="MORADOS"></option>
+					<option value="VERDES"></option>
+				</datalist>
+				<label for="commEmpaque"> EMPAQUE </label>
+				<input name="commEmpaque" id="commEmpaque" list="commEmpaque">
+				<datalist id="commEmpaque">
+					<option value="ATADOS"></option>
+					<option value="EMBOLSADOS"></option>
+					<option value="TIPS (BANDEJAS)"></option>
+				</datalist>
+				<label for="pckList"><input type="checkbox" id="pckList">Cuenta con Packing List</label>
+		</form>
+	</div>
+	<div id="creditos">
+		<p>arn</p>
+	</div>
+</div>
+</body>
+</html>
